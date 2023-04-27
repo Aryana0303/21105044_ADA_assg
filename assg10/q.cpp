@@ -17,7 +17,7 @@ bool isValid(vector<vector<char> > &board, int row, int col, char c)
         {
             return false;
         }
-        if (board[row][i] == c) // char alrady present in the col
+        if (board[row][i] == c) // char already present in the col
         {
             return false;
         }
@@ -39,7 +39,7 @@ bool solve(vector<vector<char> >& board)
             {
                 if(board[i][j]=='.')//check if it is an empty cell
                 {
-                    //once you find an empty cell you will try out everyhting from 0 to 9
+                   
                     for(char c='1';c<='9';c++)
                     {
                         if(isValid(board,i,j,c))//this isValid will check wether we can place the char at that empty position or not
