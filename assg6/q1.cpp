@@ -13,7 +13,7 @@ void search(vector<vector<int> > &matrix,int n_rows,int n_cols,int x)
     int row = 0;
     int col = n_cols-1;
 
-
+//start searching from top right corner
     while(row<n_rows && col>=0)
     {
         if(matrix[row][col]==x)
