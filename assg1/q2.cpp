@@ -7,7 +7,7 @@ void motuPatlu(int n)
 {
     int sum = 0;
     int i = 0;
-    while (sum + 3 * i < n)   //calculates the number of bricks placed by both Motu and Patlu in each round until the total number of mangoes is at least n
+    while (sum + 3 * i < n)   //calculates the number of bricks placed by both Motu and Patlu in each round until the total number of bricks is at least n
     {
         sum += 3 * i;
         i++;
