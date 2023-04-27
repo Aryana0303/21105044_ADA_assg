@@ -16,6 +16,7 @@ bool palindrome(vector<char> &arr, int length)
             return true;
         }
     }
+    return true;
 }
 
 int main()
