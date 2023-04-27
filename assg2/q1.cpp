@@ -5,20 +5,17 @@ using namespace std;
 bool palindrome(vector<char> &arr, int length)
 {
     int n=arr.size();
-    int i=0;
-    int j=n-1;
-    
-   
-    while(i<=j){
-        if(arr[i] != arr[j]){
+    for (int i = 0; i < length / 2; i++)
+    {
+        if (arr[i] != arr[length - i - 1])
+        {
             return false;
         }
-        else{
+        else
+        {
             return true;
         }
     }
-    return true;
-    
 }
 
 int main()
