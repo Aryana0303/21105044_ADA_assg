@@ -26,7 +26,8 @@ void prims(int **edges, int v){
     for(int i=0;i<v;i++){
         int minVertex=findMinVertex(weight,visited,v);
         visited[minVertex]=true;
-        for(int j=0;j<v;j++){  //for each unvisited vertex j that is adjacent to minVertex, the code checks if the weight of the edge connecting minVertex and j is less than the current weight weight[j] of vertex j
+        for(int j=0;j<v;j++){  //for each unvisited vertex j that is adjacent to minVertex, the code checks if the weight of the edge connecting minVertex 
+            //and j is less than the current weight weight[j] of vertex j
             if(edges[minVertex][j] != 0 && !visited[j]){
                 if(edges[minVertex][j]<weight[j]){
                     weight[j]=edges[minVertex][j];
@@ -37,10 +38,13 @@ void prims(int **edges, int v){
         
     }
     for(int i=1;i<v;i++){
-        if(parent[i]<i){
+        if(parent[i]<i){ 
+
             cout<<parent[i]<<" "<<i<<" "<<weight[i]<<endl;
         }
-        else{
+        else{ 
+
+
             cout<<i<<" "<<parent[i]<<" "<<weight[i]<<endl;
         }
     }
