@@ -62,6 +62,7 @@ int main() {
         edges[s][d]=w;
         edges[d][s]=w;
     }
+    cout<<"Output : "<<endl;
     prims(edges, v);
 }
    
