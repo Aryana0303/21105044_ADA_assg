@@ -22,3 +22,6 @@ int main()
 
     cout << stairs(n) << endl;
 }
+
+//time complexity: O(n)
+//space complexity: O(n)
