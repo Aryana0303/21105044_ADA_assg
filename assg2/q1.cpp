@@ -31,3 +31,6 @@ int main()
     }
     cout<< palindrome(arr, n)<<endl;
 }
+
+//time complexity: O(n)
+//space complexity: O(1)
