@@ -15,3 +15,6 @@ int main(){
     cin>>a>>b;;
     std::cout<<power(a,b)<<endl;
 }
+
+//time complexity: O(b)
+//space complexity: O(b)
