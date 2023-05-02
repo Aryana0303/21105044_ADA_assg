@@ -13,7 +13,7 @@ void motuPatlu(int n)
         i++;
     }
 
-    if (n - sum - i > 0)
+    if (n - sum - i > 0) //remaining - i
     {
         cout << "Motu" << endl;
     }
