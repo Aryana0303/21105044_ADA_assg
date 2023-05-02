@@ -1,19 +1,13 @@
 #include <iostream>
-#include<vector>
 using namespace std;
 
-bool palindrome(vector<char> &arr, int length)
+bool palindrome(string s)
 {
-    int n=arr.size();
-    for (int i = 0; i < length / 2; i++)
+    for (int i = 0; i < s.length() / 2; i++)
     {
-        if (arr[i] != arr[length - i - 1])
+        if (s[i] != s[s.length() - i - 1])
         {
             return false;
-        }
-        else
-        {
-            return true;
         }
     }
     return true;
@@ -21,15 +15,9 @@ bool palindrome(vector<char> &arr, int length)
 
 int main()
 {
-    vector<char> arr;
-    int n;
-    cin>>n;
-    char a;
-    for(int i=0;i<n;i++){
-        cin>>a;
-        arr.push_back(a);
-    }
-    cout<< palindrome(arr, n)<<endl;
+    string s;
+    cin >> s;
+    cout << palindrome(s) << endl;
 }
 
 //time complexity: O(n)
