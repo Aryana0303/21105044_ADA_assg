@@ -35,4 +35,5 @@ int main()
     }
 }
 
-// time complexity=O(2^n*n);
+// time complexity=O(2^n*n)
+// space complexity=O(n)
