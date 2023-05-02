@@ -49,4 +49,7 @@ int main()
         cout << s.top() << " ";
         s.pop();
     }
+    
+    //time complexity: O(n^2)
+    //space complexity: O(n)
 }
